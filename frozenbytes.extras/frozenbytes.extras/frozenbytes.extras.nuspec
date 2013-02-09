@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>frozenbytes.extras</id>
+    <title>frozenbytes.extras</title>
+    <version>1.00</version>
+    <authors>Sean Gilbert</authors>
+    <owners>Sean Gilbert</owners>
+    <summary>frozenbytes.extras</summary>
+    <description>frozenbytes.extras</description>
+    <projectUrl>https://github.com/segilbert/nuget.packages</projectUrl>
+    <tags>frozenbytes.extras node mono ruby</tags>
+    <copyright>frozenbytes</copyright>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!--<iconUrl>https://github.com/segilbert/nuget.packages/raw/master/frozenbytes.extras/frozenbytes.extras.gif</iconUrl>-->
+    <dependencies>
+      	<dependency id="node.js.install" />
+	<dependency id="ruby.install" />
+	<dependency id="mono" />
+	<dependency id="compass" />
+	<dependency id="roundhouse" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <!--<file src="content\**" target="content" />-->
+  </files>
+</package>

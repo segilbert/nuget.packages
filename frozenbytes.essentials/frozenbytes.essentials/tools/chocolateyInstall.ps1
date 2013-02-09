@@ -1,0 +1,1 @@
+﻿#Install-VirtualPackage 'frozenbytes.essentials.tool' 'frozenbytes.essentials.app'
