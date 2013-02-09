@@ -3,7 +3,7 @@
   <metadata>
     <id>frozenbytes.essentials</id>
     <title>frozenbytes.essentials</title>
-    <version>1.00</version>
+    <version>1.04</version>
     <authors>Sean Gilbert</authors>
     <owners>Sean Gilbert</owners>
     <summary>frozenbytes.essentials</summary>
@@ -12,7 +12,7 @@
     <tags>frozenbytes frozenbytes.essentials utilities tools chocolatey</tags>
     <copyright>frozenbytes</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://github.com/segilbert/nuget.packages/images/frozenbytes.png</iconUrl>
+    <iconUrl>http://www.i-m-code.com/blog/images/frozen_sm.png</iconUrl>
     <dependencies>
 	<dependency id='console2' />
 	<dependency id='resharper' />
@@ -20,8 +20,8 @@
 	<dependency id='filezilla' />
 	<dependency id='expresso' />
 	<dependency id='winrar' />
-	<dependency id='notepadpluplus' />
-	<dependency id='sublimetext' />
+	<dependency id='notepadplusplus' />
+	<dependency id='sublimetext2' />
 	<dependency id='sysinternals' />
 	<dependency id='ilmerge' />
 	<dependency id='folder_size' />

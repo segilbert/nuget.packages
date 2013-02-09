@@ -3,8 +3,8 @@
   <metadata>
     <id>frozenbytes.vs2010.extensions</id>
     <title>frozenbytes.vs2010.extensions</title>
-    <version>__REPLACE__</version>
-    <authors>__REPLACE__</authors>
+    <version>1.00</version>
+    <authors>Sean Gilbert</authors>
     <owners>Sean Gilbert</owners>
     <summary>frozenbytes.vs2010.extensions</summary>
     <description>frozenbytes.vs2010.extensions</description>
@@ -13,7 +13,7 @@
     <copyright></copyright>
     <licenseUrl>__REPLACE__</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <!--<iconUrl>https://github.com/segilbert/nuget.packages/raw/master/frozenbytes.vs2010.extensions/frozenbytes.vs2010.extensions.gif</iconUrl>-->
+    <iconUrl>http://www.i-m-code.com/blog/images/frozen_sm.png</iconUrl>
     <!--<dependencies>
       <dependency id="" version="" />
     </dependencies>-->

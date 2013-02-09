@@ -13,7 +13,7 @@
     <copyright></copyright>
     <licenseUrl>__REPLACE__</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <!--<iconUrl>https://github.com/segilbert/nuget.packages/raw/master/frozenbytes.vs2012.extensions/frozenbytes.vs2012.extensions.gif</iconUrl>-->
+	<iconUrl>http://www.i-m-code.com/blog/images/frozen_sm.png</iconUrl>
     <!--<dependencies>
       <dependency id="" version="" />
     </dependencies>-->
