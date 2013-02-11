@@ -3,7 +3,7 @@
   <metadata>
     <id>mightymoose</id>
     <title>mightymoose</title>
-    <version>1.46</version>
+    <version>1.46.01</version>
     <authors>Continuoustests</authors>
     <owners>Sean Gilbert</owners>
     <summary>ContinuousTests is a FREE continuous testing tool for the .Net and Mono platform called Mighty Moose</summary>
@@ -13,6 +13,7 @@
     <tags>mightymoose continuous tests tools chocolatey</tags>
     <copyright>Continuoustests</copyright>
     <iconUrl>http://continuoustests.com/images/logo.png</iconUrl>
+	<releaseNotes>Added Uninstall Support</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
