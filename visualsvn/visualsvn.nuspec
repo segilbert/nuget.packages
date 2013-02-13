@@ -3,24 +3,25 @@
   <metadata>
     <id>visualsvn</id>
     <title>visualsvn</title>
-    <version>__REPLACE__</version>
-    <authors>__REPLACE__</authors>
+    <version>3.0.4</version>
+    <authors>VisualSVN Limited</authors>
     <owners>Sean Gilbert</owners>
-    <summary>visualsvn</summary>
-    <description>visualsvn</description>
-    <projectUrl>__REPLACE__</projectUrl>
+    <summary>VisualSVN is a professional grade Subversion integration plug-in for Visual Studio.</summary>
+    <description>VisualSVN is a professional grade Subversion integration plug-in for Visual Studio.
+Key benefits of VisualSVN are:
+Unbeatable reliability: Visual Studio will never crash or hang because of VisualSVN.
+Seamless integration: VisualSVN automatically handles added or renamed files and reflects these operations to Subversion.
+Real-time status: VisualSVN carefully tracks and displays all the current changes made to your working copy.
+Short learning curve: VisualSVN utilizes TortoiseSVN dialogs and provides a smart wizard to put your sources under Subversion.</description>
+    <projectUrl>http://www.visualsvn.com/</projectUrl>
     <tags>visualsvn admin</tags>
-    <copyright></copyright>
-    <licenseUrl>__REPLACE__</licenseUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <!--<iconUrl>https://github.com/segilbert/nuget.packages/raw/master/visualsvn/visualsvn.gif</iconUrl>-->
-    <!--<dependencies>
-      <dependency id="" version="" />
-    </dependencies>-->
-    <releaseNotes></releaseNotes>
+    <copyright>VisualSVN</copyright>
+    <licenseUrl>http://www.visualsvn.com/visualsvn/purchase/</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <iconUrl>http://www.visualsvn.com/images/visualsvn_logo.jpg</iconUrl>
+    <releaseNotes>http://www.visualsvn.com/company/news/#visualsvn_3_0_4</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
-    <!--<file src="content\**" target="content" />-->
   </files>
 </package>
