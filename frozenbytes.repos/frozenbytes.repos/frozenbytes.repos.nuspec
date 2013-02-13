@@ -14,12 +14,12 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>http://www.i-m-code.com/blog/images/frozen_sm.png</iconUrl>
     <dependencies>
-	<dependency id='git.install' />
-	<dependency id='githubforwindows' />
-    	<dependency id='hg' />
-	<dependency id='posh-hg' />
-	<dependency id='tortoisehg' />
-	<dependency id='tortoisesvn' />
+		<dependency id='git.install' />
+		<dependency id='githubforwindows' />
+		<dependency id='hg' />
+		<dependency id='posh-hg' />
+		<dependency id='tortoisehg' />
+		<dependency id='tortoisesvn' />
     </dependencies>
   </metadata>
 </package>

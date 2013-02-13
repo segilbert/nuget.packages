@@ -14,27 +14,27 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>http://www.i-m-code.com/blog/images/frozen_sm.png</iconUrl>
     <dependencies>
-	<dependency id='console2' />
-	<dependency id='resharper' />
-	<dependency id='fiddler' />
-	<dependency id='filezilla' />
-	<dependency id='expresso' />
-	<dependency id='winrar' />
-	<dependency id='notepadplusplus' />
-	<dependency id='sublimetext2' />
-	<dependency id='sysinternals' />
-	<dependency id='ilmerge' />
-	<dependency id='folder_size' />
-	<dependency id='logparser.lizardgui' />
-	<dependency id='dotpeek' />
-	<dependency id='xmind' />
-	<dependency id='grepwin' />
-	<dependency id='skype' />
-	<dependency id='testdriven.net' />
-	<dependency id='ccleaner' />
-	<dependency id='paint.net' />
-	<dependency id='virtualclonedrive' />
-	<dependency id='winmerge' />
+		<dependency id='console2' />
+		<dependency id='resharper' />
+		<dependency id='fiddler' />
+		<dependency id='filezilla' />
+		<dependency id='expresso' />
+		<dependency id='winrar' />
+		<dependency id='notepadplusplus' />
+		<dependency id='sublimetext2' />
+		<dependency id='sysinternals' />
+		<dependency id='ilmerge' />
+		<dependency id='folder_size' />
+		<dependency id='logparser.lizardgui' />
+		<dependency id='dotpeek' />
+		<dependency id='xmind' />
+		<dependency id='grepwin' />
+		<dependency id='skype' />
+		<dependency id='testdriven.net' />
+		<dependency id='ccleaner' />
+		<dependency id='paint.net' />
+		<dependency id='virtualclonedrive' />
+		<dependency id='winmerge' />
     </dependencies>
     <releaseNotes></releaseNotes>
   </metadata>

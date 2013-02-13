@@ -9,20 +9,21 @@
     <summary>frozenbytes.extras installs extra platforms, languages, frameworks, and tools.  Installs node.js, ruby, mono and tools like compass and roundhouse.</summary>
     <description>frozenbytes.extras installs extra platforms, languages, frameworks, and tools.</description>
     <projectUrl>https://github.com/segilbert/nuget.packages</projectUrl>
-    <tags>frozenbytes.extras node mono ruby</tags>
+    <tags>frozenbytes.extras node mono ruby compass roundhouse</tags>
     <copyright>frozenbytes</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>http://www.i-m-code.com/blog/images/frozen_sm.png</iconUrl>
     <dependencies>
-      	<dependency id="node.js.install" />
-	<dependency id="ruby.install" />
-	<dependency id="mono" />
-	<dependency id="compass" />
-	<dependency id="roundhouse" />
+  		<dependency id='mono' />
+  		<dependency id='Compass' />
+  		<dependency id='roundhouse' />
+      <dependency id='nodejs.install' />
+      <dependency id='nodejs.commandline' />
+      <dependency id='ruby' />      
     </dependencies>
+    <releaseNotes></releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
-    <!--<file src="content\**" target="content" />-->
   </files>
 </package>
