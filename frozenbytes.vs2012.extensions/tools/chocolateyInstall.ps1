@@ -1,44 +1,74 @@
-﻿#NOTE: Please remove any commented lines to tidy up prior to releasing the package, including this one
+﻿$packageName = 'forzenbytes.vs2012.extensions'
 
-$packageName = 'frozenbytes.vs2012.extensions' # arbitrary name for the package, used in messages
-$installerType = 'EXE_OR_MSI' #only one of these two: exe or msi
-$url = 'URL_HERE' # download url
-$url64 = $url # 64bit URL here or just use the same as $url
-$silentArgs = 'SILENT_ARGS_HERE' # "/s /S /q /Q /quiet /silent /SILENT /VERYSILENT" # try any of these to get the silent installer #msi is always /quiet
-$validExitCodes = @(0) #please insert other valid exit codes here, exit codes for ms http://msdn.microsoft.com/en-us/library/aa368542(VS.85).aspx
+# Special Thanks to Alan Stevens for this powershell code
+# 
 
-# main helpers - these have error handling tucked into them already
-# installer, will assert administrative rights
-Install-ChocolateyPackage "$packageName" "$installerType" "$silentArgs" "$url" "$url64"  -validExitCodes $validExitCodes
-# download and unpack a zip file
-Install-ChocolateyZipPackage "$packageName" "$url" "$(Split-Path -parent $MyInvocation.MyCommand.Definition)" "$url64"
+function Get-Batchfile ($file) {
+  $cmd = "`"$file`" & set"
+    cmd /c $cmd | Foreach-Object {
+      $p, $v = $_.split('=')
+        Set-Item -path env:$p -value $v
+    }
+}
 
-#try { #error handling is only necessary if you need to do anything in addition to/instead of the main helpers
-  # other helpers - using any of these means you want to uncomment the error handling up top and at bottom.
-  # downloader that the main helpers use to download items
-  #Get-ChocolateyWebFile "$packageName" 'DOWNLOAD_TO_FILE_FULL_PATH' "$url" "$url64"
-  # installer, will assert administrative rights - used by Install-ChocolateyPackage
-  #Install-ChocolateyInstallPackage "$packageName" "$installerType" "$silentArgs" '_FULLFILEPATH_' -validExitCodes $validExitCodes
-  # unzips a file to the specified location - auto overwrites existing content
-  #Get-ChocolateyUnzip "FULL_LOCATION_TO_ZIP.zip" "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-  # Runs processes asserting UAC, will assert administrative rights - used by Install-ChocolateyInstallPackage
-  #Start-ChocolateyProcessAsAdmin 'STATEMENTS_TO_RUN' 'Optional_Application_If_Not_PowerShell' -validExitCodes $validExitCodes
-  # add specific folders to the path - any executables found in the chocolatey package folder will already be on the path. This is used in addition to that or for cases when a native installer doesn't add things to the path.
-  #Install-ChocolateyPath 'LOCATION_TO_ADD_TO_PATH' 'User_OR_Machine' # Machine will assert administrative rights
-  # add specific files as shortcuts to the desktop
-  #$target = Join-Path $MyInvocation.MyCommand.Definition "$($packageName).exe"
-  #Install-ChocolateyDesktopLink $target
-  
-  #------- ADDITIONAL SETUP -------#
-  # make sure to uncomment the error handling if you have additional setup to do
+function VsVars32()
+{
+    $BatchFile = join-path $env:VS110COMNTOOLS "vsvars32.bat"
+    Get-Batchfile `"$BatchFile`"
+}
 
-  #$processor = Get-WmiObject Win32_Processor
-  #$is64bit = $processor.AddressWidth -eq 64
+function curlex($url, $filename) {
+  $path = join-path $env:temp $filename
 
-  
-  # the following is all part of error handling
-  #Write-ChocolateySuccess "$packageName"
-#} catch {
-  #Write-ChocolateyFailure "$packageName" "$($_.Exception.Message)"
-  #throw 
-#}
+    if( test-path $path ) { rm -force $path }
+
+  (new-object net.webclient).DownloadFile($url, $path)
+
+    return new-object io.fileinfo $path
+}
+
+function installsilently($url, $name) {
+  echo "Installing $name"
+
+  $extension = (curlex $url $name).FullName
+
+  $result = Start-Process -FilePath "VSIXInstaller.exe" -ArgumentList "/q $extension" -Wait -PassThru;
+}
+
+try {
+
+  vsvars32
+
+    installsilently http://visualstudiogallery.msdn.microsoft.com/b31916b0-c026-4c27-9d6b-ba831093f6b2/file/62080/3/Gister.vsix Gister.vsix
+    
+    installsilently http://visualstudiogallery.msdn.microsoft.com/e5f41ad9-4edc-4912-bca3-91147db95b99/file/7088/6/PowerCommands.vsix PowerCommands.vsix
+
+    installsilently http://visualstudiogallery.msdn.microsoft.com/07d54d12-7133-4e15-becb-6f451ea3bea6/file/79465/24/WebEssentials2012.vsix WebEssentials2012.vsix
+
+    installsilently http://visualstudiogallery.msdn.microsoft.com/366ad100-0003-4c9a-81a8-337d4e7ace05/file/82992/3/ColorThemeEditor.vsix ColorThemeEditor.vsix
+
+    installsilently http://visualstudiogallery.msdn.microsoft.com/a83505c6-77b3-44a6-b53b-73d77cba84c8/file/74740/18/SquaredInfinity.VSCommands.VS11.vsix VsCommands.vsix
+
+    installsilently http://visualstudiogallery.msdn.microsoft.com/7c8341f1-ebac-40c8-92c2-476db8d523ce/file/15808/10/SpellChecker.vsix SpellChecker.vsix
+
+    installsilently http://visualstudiogallery.msdn.microsoft.com/23d11b45-c2ed-4398-9cb5-48ea67878470/file/77232/3/Twitter%20Bootstrap%20MVC.vsix TwitterBootstrapMvc.vsix
+
+    installsilently http://visualstudiogallery.msdn.microsoft.com/268d0b05-6ba5-4793-9a10-7d9d2a478881/file/70320/5/MVC4TwitterBootstrapStarterLayoutPage.vsix MVC4TwitterBootstrapStarterLayoutPage.vsix
+
+    installsilently http://visualstudiogallery.msdn.microsoft.com/1460ab21-75be-49d0-900f-dfd538321424/file/54475/11/ConsoleLauncher.vsix ConsoleLauncher
+
+    installsilently http://visualstudiogallery.msdn.microsoft.com/2b96d16a-c986-4501-8f97-8008f9db141a/file/53962/44/Mindscape.WebWorkbench.Integration.10.vsix WebWorkbench.vsix
+
+    installsilently http://visualstudiogallery.msdn.microsoft.com/0855e23e-4c4c-4c82-8b39-24ab5c5a7f79/file/15725/3/MarkdownMode.vsix MarkdownMode.vsix
+
+    installsilently http://visualstudiogallery.msdn.microsoft.com/6e54271c-2c4e-4911-a1b4-a65a588ae138/file/85910/4/TfsGoOffline.vsix Tfs-GoOffline
+
+    installsilently http://visualstudiogallery.msdn.microsoft.com/bb424812-f742-41ef-974a-cdac607df921/file/35141/30/Clarius.DBS.vsix Clarius.DBS.vsix
+
+    installsilently http://visualstudiogallery.msdn.microsoft.com/2beb9705-b568-45d1-8550-751e181e3aef/file/93630/5/MultiEdit.vsix MultiEdit.vsix
+
+    Write-ChocolateySuccess $packageName
+} catch {
+  Write-ChocolateyFailure $packageName "$($_.Exception.Message)"
+    throw
+}
