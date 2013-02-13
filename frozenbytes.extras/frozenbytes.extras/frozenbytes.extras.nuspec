@@ -3,7 +3,7 @@
   <metadata>
     <id>frozenbytes.extras</id>
     <title>frozenbytes.extras</title>
-    <version>1.00</version>
+    <version>1.02</version>
     <authors>Sean Gilbert</authors>
     <owners>Sean Gilbert</owners>
     <summary>frozenbytes.extras installs extra platforms, languages, frameworks, and tools.  Installs node.js, ruby, mono and tools like compass and roundhouse.</summary>
@@ -15,15 +15,16 @@
     <iconUrl>http://www.i-m-code.com/blog/images/frozen_sm.png</iconUrl>
     <dependencies>
   		<dependency id='mono' />
-  		<dependency id='Compass' />
+  		<dependency id='ruby' />  
+      <dependency id='Compass' />
   		<dependency id='roundhouse' />
       <dependency id='nodejs.install' />
-      <dependency id='nodejs.commandline' />
-      <dependency id='ruby' />      
+      <dependency id='nodejs.commandline' />          
     </dependencies>
     <releaseNotes></releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
+    <file src="content\**" target="content" />
   </files>
 </package>
