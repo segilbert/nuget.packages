@@ -3,7 +3,7 @@
   <metadata>
     <id>datastax.community</id>
     <title>datastax.community</title>
-    <version>1.21.01</version>
+    <version>2.0.01</version>
     <authors>DataStax</authors>
     <owners>Sean Gilbert</owners>
     <summary> DataStax Community Editions enable you to get up and running fast – just ten minutes to your first cluster. Choose either DataStax Enterprise Edition for production, big data applications, or DataStax Community Edition to get the latest version of Apache Cassandra for non-production development use.</summary>

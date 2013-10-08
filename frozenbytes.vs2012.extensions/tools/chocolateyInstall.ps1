@@ -38,7 +38,11 @@ function installsilently($url, $name) {
 try {
 
   vsvars32
+  
+	installsilently http://visualstudiogallery.msdn.microsoft.com/69023d00-a4f9-4a34-a6cd-7e854ba318b5/file/55948/15/SlowCheetah.vsix SlowCheetah.vsix
 
+	installsilently http://visualstudiogallery.msdn.microsoft.com/7c8341f1-ebac-40c8-92c2-476db8d523ce/file/15808/10/SpellChecker.vsix SpellChecker.vsix
+		
     installsilently http://visualstudiogallery.msdn.microsoft.com/b31916b0-c026-4c27-9d6b-ba831093f6b2/file/62080/3/Gister.vsix Gister.vsix
     
     installsilently http://visualstudiogallery.msdn.microsoft.com/e5f41ad9-4edc-4912-bca3-91147db95b99/file/7088/6/PowerCommands.vsix PowerCommands.vsix
@@ -67,6 +71,8 @@ try {
 
     installsilently http://visualstudiogallery.msdn.microsoft.com/2beb9705-b568-45d1-8550-751e181e3aef/file/93630/5/MultiEdit.vsix MultiEdit.vsix
 
+    installsilently http://visualstudiogallery.msdn.microsoft.com/961e6734-cd3a-4afb-a121-4541742b912e/file/36823/29/JSLint.VS2010.vsix JSLint.VS2010.vsix
+    
     Write-ChocolateySuccess $packageName
 } catch {
   Write-ChocolateyFailure $packageName "$($_.Exception.Message)"

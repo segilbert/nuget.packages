@@ -3,7 +3,7 @@
   <metadata>
     <id>frozenbytes.vs2012.extensions</id>
     <title>frozenbytes.vs2012.extensions</title>
-    <version>1.00</version>
+    <version>1.02</version>
     <authors>Sean Gilbert</authors>
     <owners>Sean Gilbert</owners>
     <summary>frozenbytes hand selected VS 2012 extensions</summary>
@@ -14,7 +14,9 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>http://www.i-m-code.com/blog/images/frozen_sm.png</iconUrl>
     <releaseNotes>
-      Gister
+      SlowCheethaXMLTransforms
+	  Spell hecker
+	  Gister
       PowerCommands
       WebEssentials2012
       ColorThemeEditor
@@ -28,6 +30,7 @@
       Tfs-GoOffline
       Clarius.DBS
       MultiEdit
+      JSLint
     </releaseNotes>
   </metadata>
   <files>

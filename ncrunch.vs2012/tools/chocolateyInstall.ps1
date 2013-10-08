@@ -1,6 +1,6 @@
 ﻿$packageName = 'ncrunch.vs2012' 
 $installerType = 'MSI' 
-$url = 'http://downloads.ncrunch.net/NCrunch_VS2012_1.44.0.11.msi'  
+$url = 'http://downloads.ncrunch.net/NCrunch_VS2012_1.47.0.18.msi'  
 $url64 = $url 
 $silentArgs = '/quiet' 
 $validExitCodes = @(0) 

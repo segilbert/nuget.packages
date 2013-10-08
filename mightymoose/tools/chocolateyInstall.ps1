@@ -1,6 +1,6 @@
 ﻿$packageName = 'mightmoose' 
 $installerType = 'EXE' 
-$url = 'http://continuoustests.com/ContinuousTests-v1.0.46.exe'  
+$url = 'http://continuoustests.com/ContinuousTests-v1.0.47.exe'  
 $url64 = $url 
 $silentArgs = '/SILENT' 
 $validExitCodes = @(0) 
