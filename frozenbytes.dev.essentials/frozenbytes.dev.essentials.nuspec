@@ -12,7 +12,6 @@
     <tags>frozenbytes frozenbytes.dev.essentials utilities tools chocolatey</tags>
     <copyright>frozenbytes</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>http://www.i-m-code.com/blog/images/frozen_sm.png</iconUrl>
     <dependencies>
 		<dependency id='console2' />
 		<dependency id='resharper' /> 
