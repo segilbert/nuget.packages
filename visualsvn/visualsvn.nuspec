@@ -3,7 +3,7 @@
   <metadata>
     <id>visualsvn</id>
     <title>visualsvn</title>
-    <version>3.5.1</version>
+    <version>4.0.9</version>
     <authors>VisualSVN Limited</authors>
     <owners>Sean Gilbert</owners>
     <summary>VisualSVN is a professional grade Subversion integration plug-in for Visual Studio.</summary>
@@ -19,7 +19,7 @@ Short learning curve: VisualSVN utilizes TortoiseSVN dialogs and provides a smar
     <licenseUrl>http://www.visualsvn.com/visualsvn/purchase/</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <iconUrl>http://www.visualsvn.com/images/visualsvn_logo.jpg</iconUrl>
-    <releaseNotes>http://www.visualsvn.com/company/news/#visualsvn_3_0_4</releaseNotes>
+    <releaseNotes>http://www.visualsvn.com/company/news/#visualsvn_4_0_9</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

@@ -3,7 +3,7 @@
   <metadata>
     <id>ncrunch.vs2012</id>
     <title>ncrunch.vs2012</title>
-    <version>1.47.0.18</version>
+    <version>2.10.0.4</version>
     <authors>Remco Software Ltd</authors>
     <owners>Sean Gilbert</owners>
     <summary>NCrunch is an automated concurrent testing tool for Visual Studio .NET 2012.  It intelligently runs automated tests so that you don't have to, and gives you a huge amount of useful information about your tested code, such as code coverage and performance metrics, inline in your IDE while you type.</summary>

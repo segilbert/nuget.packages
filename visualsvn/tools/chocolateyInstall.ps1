@@ -1,7 +1,7 @@
 ﻿
 $packageName = 'visualsvn' 
 $installerType = 'MSI' 
-$url = 'http://www.visualsvn.com/files/VisualSVN-3.5.1.msi' 
+$url = 'http://www.visualsvn.com/files/VisualSVN-4.0.9.msi' 
 $url64 = $url 
 $silentArgs = '/quiet' 
 $validExitCodes = @(0) 

@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>ncrunch.vs2010</id>
-    <title>ncrunch.vs2010</title>
+    <id>ncrunch.vs2013</id>
+    <title>ncrunch.vs2013</title>
     <version>2.10.0.4</version>
     <authors>Remco Software Ltd</authors>
     <owners>Sean Gilbert</owners>
-    <summary>NCrunch is an automated concurrent testing tool for Visual Studio .NET 2010.  It intelligently runs automated tests so that you don't have to, and gives you a huge amount of useful information about your tested code, such as code coverage and performance metrics, inline in your IDE while you type.</summary>
-    <description>NCrunch is an automated concurrent testing tool for Visual Studio .NET 2012.  It intelligently runs automated tests so that you don't have to, and gives you a huge amount of useful information about your tested code, such as code coverage and performance metrics, inline in your IDE while you type.</description>
+    <summary>NCrunch is an automated concurrent testing tool for Visual Studio .NET 2013.  It intelligently runs automated tests so that you don't have to, and gives you a huge amount of useful information about your tested code, such as code coverage and performance metrics, inline in your IDE while you type.</summary>
+    <description>NCrunch is an automated concurrent testing tool for Visual Studio .NET 2013.  It intelligently runs automated tests so that you don't have to, and gives you a huge amount of useful information about your tested code, such as code coverage and performance metrics, inline in your IDE while you type.</description>
     <projectUrl>http://www.ncrunch.net/</projectUrl>
     <tags>ncrunch admin testing automation chocolatey</tags>
     <copyright>NCrunch</copyright>
