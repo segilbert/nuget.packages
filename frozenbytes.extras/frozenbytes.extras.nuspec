@@ -3,16 +3,16 @@
   <metadata>
     <id>frozenbytes.extras</id>
     <title>frozenbytes.extras</title>
-    <version>1.02</version>
+    <version>1.03</version>
     <authors>Sean Gilbert</authors>
     <owners>Sean Gilbert</owners>
     <summary>frozenbytes.extras installs extra platforms, languages, frameworks, and tools.  Installs node.js, ruby, mono and tools like compass and roundhouse.</summary>
     <description>frozenbytes.extras installs extra platforms, languages, frameworks, and tools.</description>
     <projectUrl>https://github.com/segilbert/nuget.packages</projectUrl>
     <tags>frozenbytes.extras node mono ruby compass roundhouse</tags>
-    <copyright>frozenbytes</copyright>
+    <copyright>frozenbytes 2014</copyright>
+    <iconUrl>https://raw.githubusercontent.com/segilbert/presentations/master/images/create_frozen_liquid_effects.jpg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>http://www.i-m-code.com/blog/images/frozen_sm.png</iconUrl>
     <dependencies>
   		<dependency id='mono' />
   		<dependency id='ruby' />  
@@ -21,7 +21,9 @@
       <dependency id='nodejs.install' />
       <dependency id='nodejs.commandline' />          
     </dependencies>
-    <releaseNotes></releaseNotes>
+    <releaseNotes>
+      Updated package icon url
+    </releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

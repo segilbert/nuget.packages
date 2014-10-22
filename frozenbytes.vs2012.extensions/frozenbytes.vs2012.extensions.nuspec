@@ -3,17 +3,18 @@
   <metadata>
     <id>frozenbytes.vs2012.extensions</id>
     <title>frozenbytes.vs2012.extensions</title>
-    <version>1.02</version>
+    <version>1.03</version>
     <authors>Sean Gilbert</authors>
     <owners>Sean Gilbert</owners>
     <summary>frozenbytes hand selected VS 2012 extensions</summary>
     <description>frozenbytes hand selected VS 2012 extensions</description>
     <projectUrl>https://github.com/segilbert/nuget.packages</projectUrl>
     <tags>frozenbytes.vs2012.extensions admin</tags>
-    <copyright>frozenbytes</copyright>
+    <copyright>frozenbytes 2014</copyright>
+    <iconUrl>https://raw.githubusercontent.com/segilbert/presentations/master/images/create_frozen_liquid_effects.jpg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>http://www.i-m-code.com/blog/images/frozen_sm.png</iconUrl>
     <releaseNotes>
+      Update icon url
       SlowCheethaXMLTransforms
 	  Spell hecker
 	  Gister

@@ -3,16 +3,16 @@
   <metadata>
     <id>frozenbytes.essentials</id>
     <title>frozenbytes.essentials</title>
-    <version>1.05</version>
+    <version>1.06</version>
     <authors>Sean Gilbert</authors>
     <owners>Sean Gilbert</owners>
     <summary>frozenbytes.essentials</summary>
     <description>frozenbytes.essentials</description>
     <projectUrl>https://github.com/segilbert/nuget.packages</projectUrl>
     <tags>frozenbytes frozenbytes.essentials utilities tools chocolatey</tags>
-    <copyright>frozenbytes</copyright>
+    <copyright>frozenbytes 2014</copyright>
+    <iconUrl>https://raw.githubusercontent.com/segilbert/presentations/master/images/create_frozen_liquid_effects.jpg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>http://www.i-m-code.com/blog/images/frozen_sm.png</iconUrl>
     <dependencies>
 		<dependency id='console2' />
 		<dependency id='resharper' />
@@ -37,6 +37,8 @@
 		<dependency id='winmerge' />
 		<dependency id='gimp' />
     </dependencies>
-    <releaseNotes></releaseNotes>
+    <releaseNotes>
+    	Updated package icon url
+    </releaseNotes>
   </metadata>
 </package>
