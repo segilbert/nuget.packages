@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>frozenbytes.baseline.dev</id>
+    <version>1.0.0</version>
+    <authors>Sean Gilbert</authors>
+    <owners>Sean Gilbert</owners>
+    <description>Boxstarter spec to create baseline windows development machine</description>
+    <tags>Boxstarter forzenbytes development vm</tags>
+    <summary>Boxstarter spec to create baseline windows development machine</summary>
+    <projectUrl>https://github.com/segilbert/nuget.packages</projectUrl>
+    <copyright>frozenbytes 2014</copyright>
+    <iconUrl>https://raw.githubusercontent.com/segilbert/presentations/master/images/create_frozen_liquid_effects.jpg</iconUrl>
+    <releaseNotes>
+    	October 2014 - Initial Release
+
+    	Framework:
+    	.NET 3.5, 4 - 4.5.2
+    	Enable Web Services and ASP.NET Services
+    	Hpyer-V Services
+
+    	Development Tools:
+    	Visual Studio 2013 Ultimate
+    	VS Updates 1-3
+    	cinstm frozenbytes.essentials
+    	cinstm frozenbytes.extras
+    	cinstm frozenbytes.repos
+
+    	SDKs:
+    	VS 2013
+    	Windows 8 SDK
+
+    	VS IDE Extensions:
+    	PowerShellTools 
+		WebEssentials2013 
+		T4Toolbox 
+		StopOnFirstBuildError
+
+    </releaseNotes>
+  </metadata>
+</package>

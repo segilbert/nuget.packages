@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if ??? doesn?t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Silverlight4SDK</id>
+    <title>Silverlight 4 SDK</title>
+    <version>4.0.50826.0</version>
+    <authors>Microsoft</authors>
+    <owners>Sean Gilbert</owners>
+    <summary>The Microsoft® Silverlight™ 4 SDK contains online documentation, online samples, libraries and tools for developing Silverlight 4 applications.
+Usage of the SDK is subject to the SDK License (included in the package).</summary>
+    <description>The Microsoft® Silverlight™ 4 SDK contains online documentation, online samples, libraries and tools for developing Silverlight 4 applications.
+Usage of the SDK is subject to the SDK License (included in the package).</description>
+    <projectUrl>http://www.microsoft.com/silverlight/</projectUrl>
+    <tags>Silverlight4SDK frozenbytes Microsoft Silverlight SDK</tags>
+    <copyright>Microsoft</copyright>
+    <licenseUrl>http://www.microsoft.com/getsilverlight/get-started/install/License.aspx</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>http://www.microsoft.com/silverlight/fw/logoSilverlight.jpg</iconUrl>
+    <releaseNotes>
+    If you have installed or plan to install Microsoft® Silverlight™ 4 Tools for Visual Studio 2010, please install this update to the Microsoft® Silverlight™ 4 SDK directly.
+
+    Supported Operating System
+Windows 7, Windows Server 2008, Windows Vista
+    </releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

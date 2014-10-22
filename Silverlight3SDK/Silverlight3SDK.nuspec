@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if ??? doesn?t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Silverlight3SDK</id>
+    <title>Silverlight 3 SDK</title>
+    <version>3.0</version>
+    <authors>Microsoft</authors>
+    <owners>Sean Gilbert</owners>
+    <summary>The Microsoft® Silverlight™ 3 SDK contains online documentation, online samples, libraries and tools for developing Silverlight 3 applications.
+Usage of the SDK is subject to the SDK License (included in the package).</summary>
+    <description>The Microsoft® Silverlight™ 3 SDK contains online documentation, online samples, libraries and tools for developing Silverlight 3 applications.
+Usage of the SDK is subject to the SDK License (included in the package).</description>
+    <projectUrl>http://www.microsoft.com/silverlight/</projectUrl>
+    <tags>Silverlight3SDK frozenbytes Microsoft Silverlight SDK</tags>
+    <copyright>Microsoft</copyright>
+    <licenseUrl>http://www.microsoft.com/getsilverlight/get-started/install/license.aspx?v=3.0.40723</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>http://www.microsoft.com/silverlight/fw/logoSilverlight.jpg</iconUrl>
+    <releaseNotes>
+      Before installing this Silverlight 3 SDK, please remove any previous Silverlight 3 SDK install.
+
+      Supported Operating System
+Windows 2000 Service Pack 4, Windows 7, Windows Server 2003, Windows Server 2008, Windows Vista, Windows XP
+    </releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
