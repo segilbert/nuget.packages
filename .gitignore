@@ -2,6 +2,9 @@
 [Bb]in/
 [Oo]bj/
 
+#Do NOT IMPORT custom config files
+*boxstarter/config.log
+
 # mstest test results
 TestResults
 
