@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>frozenbytes.repos</id>
+    <title>frozenbytes.repos</title>
+    <version>1.00</version>
+    <authors>Sean Gilbert</authors>
+    <owners>Sean Gilbert</owners>
+    <summary>frozenbytes.repos installs all the source repos use on a daily basis.  Git Bash, Github for Windows, Mercurial, and Tortoise for hg and svn.</summary>
+    <description>frozenbytes.repos installs all the source repos use on a daily basis.</description>
+    <projectUrl>https://github.com/segilbert/nuget.packages</projectUrl>
+    <tags>frozenbytes frozenbytes.repos git hg tortoise svn</tags>
+    <copyright>frozenbytes</copyright>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>http://www.i-m-code.com/blog/images/frozen_sm.png</iconUrl>
+    <dependencies>
+		<dependency id='git.install' />
+		<dependency id='githubforwindows' />
+		<dependency id='hg' />
+		<dependency id='posh-hg' />
+		<dependency id='tortoisehg' />
+		<dependency id='tortoisesvn' />
+    </dependencies>
+  </metadata>
+</package>

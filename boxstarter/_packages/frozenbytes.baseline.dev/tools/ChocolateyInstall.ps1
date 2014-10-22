@@ -20,6 +20,9 @@ try {
     if (Test-PendingReboot) { Invoke-Reboot }
 
     try {
+        cinstm DotNet3.5 # Not automatically installed with VS 2013. Includes .NET 2.0. Uses Windows Features to install.
+        if (Test-PendingReboot) { Invoke-Reboot }
+
         cinst DotNet4.5
         cinst DotNet4.5.1
         cinst DotNet4.5.2
@@ -29,6 +32,7 @@ try {
         cinst IIS-WebServerRole -source windowsfeatures
         cinst IIS-WebServer -source windowsfeatures
         cinst IIS-WebServerManagementTools -source windowsfeatures
+        cinst IIS-ManagementConsole -source windowsfeatures
 
         cinst IIS-HttpCompressionDynamic -source windowsfeatures
         cinst IIS-ManagementScriptingTools -source windowsfeatures
@@ -83,9 +87,6 @@ try {
 
     # Windows SDK 7 or 8
     cinstm windows-8-1-sdk
-
-    cinstm DotNet3.5 # Not automatically installed with VS 2013. Includes .NET 2.0. Uses Windows Features to install.
-    if (Test-PendingReboot) { Invoke-Reboot }
 
     # Install Frozenbytes extensions for VS 2013
     #cinstm frozenbytes.vs2012.extensions
