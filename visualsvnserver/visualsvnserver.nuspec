@@ -3,7 +3,7 @@
   <metadata>
     <id>visualsvnserver</id>
     <title>visualsvnserver</title>
-    <version>3.0.0</version>
+    <version>3.0.0.1</version>
     <authors>VisualSVN</authors>
     <owners>Sean Gilbert</owners>
     <summary>VisualSVN Server allows you to easily install and manage a fully-functional Subversion server on the Windows platform.</summary>
@@ -15,7 +15,7 @@ Powerful management console
 Remote Server Administration
 Access and Operational Logging</description>
     <projectUrl>http://www.visualsvn.com/</projectUrl>
-    <tags>visualsvnserver svn</tags>
+    <tags>frozenbytes visualsvnserver svn</tags>
     <copyright>VisualSVN</copyright>
     <licenseUrl>http://www.visualsvn.com/server/licensing/</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>

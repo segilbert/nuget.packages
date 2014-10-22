@@ -3,7 +3,7 @@
   <metadata>
     <id>visualsvn</id>
     <title>visualsvn</title>
-    <version>4.0.9</version>
+    <version>4.0.9.1</version>
     <authors>VisualSVN Limited</authors>
     <owners>Sean Gilbert</owners>
     <summary>VisualSVN is a professional grade Subversion integration plug-in for Visual Studio.</summary>
@@ -14,7 +14,7 @@ Seamless integration: VisualSVN automatically handles added or renamed files and
 Real-time status: VisualSVN carefully tracks and displays all the current changes made to your working copy.
 Short learning curve: VisualSVN utilizes TortoiseSVN dialogs and provides a smart wizard to put your sources under Subversion.</description>
     <projectUrl>http://www.visualsvn.com/</projectUrl>
-    <tags>visualsvn admin</tags>
+    <tags>frozenbytes visualsvn</tags>
     <copyright>VisualSVN</copyright>
     <licenseUrl>http://www.visualsvn.com/visualsvn/purchase/</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>

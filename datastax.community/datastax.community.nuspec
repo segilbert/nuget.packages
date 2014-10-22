@@ -9,7 +9,7 @@
     <summary> DataStax Community Editions enable you to get up and running fast – just ten minutes to your first cluster. Choose either DataStax Enterprise Edition for production, big data applications, or DataStax Community Edition to get the latest version of Apache Cassandra for non-production development use.</summary>
     <description>DataStax makes available the DataStax Community Edition, which contains the latest community version of Apache Cassandra, along with the Cassandra Query Language (CQL) utility, and a free edition of DataStax OpsCenter, which is the tool you’ll want to use for managing and monitoring your Cassandra cluster on Windows. To get Datastax Community Edition, go to the downloads page and select the Windows installation package for your version of Microsoft Windows. Note that 32 and 64-bit installers are offered.</description>
     <projectUrl>http://www.datastax.com/</projectUrl>
-    <tags>datatax.community admin</tags>
+    <tags>frozenbytes datatax community</tags>
     <copyright>DataStax</copyright>
     <licenseUrl>http://www.datastax.com/products/community/eula</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
