@@ -3,10 +3,10 @@
   <metadata>
     <id>frozenbytes.repos</id>
     <title>frozenbytes.repos</title>
-    <version>1.01</version>
+    <version>1.02</version>
     <authors>Sean Gilbert</authors>
     <owners>Sean Gilbert</owners>
-    <summary>frozenbytes.repos installs all the source repos use on a daily basis.  Git Bash, Github for Windows, Mercurial, and Tortoise for hg and svn.</summary>
+    <summary>frozenbytes.repos installs all the source repos use on a daily basis.  Git Bash,  Mercurial, and Tortoise for git, hg and svn.</summary>
     <description>frozenbytes.repos installs all the source repos use on a daily basis.</description>
     <projectUrl>https://github.com/segilbert/nuget.packages</projectUrl>
     <tags>frozenbytes frozenbytes.repos git hg tortoise svn</tags>
@@ -15,14 +15,19 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <dependencies>
 		<dependency id='git.install' />
-		<dependency id='githubforwindows' />
+		<dependency id='TortoiseGit' />
 		<dependency id='hg' />
 		<dependency id='posh-hg' />
 		<dependency id='tortoisehg' />
 		<dependency id='tortoisesvn' />
     </dependencies>
     <releaseNotes>
-      Updated package icon url
+        October 23, 2014
+        Removed gitforwindows
+        Added TortoiseGit
+
+        October 22, 2014
+        Updated package icon url
     </releaseNotes>
   </metadata>
 </package>
