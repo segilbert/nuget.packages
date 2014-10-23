@@ -3,7 +3,7 @@
   <metadata>
     <id>frozenbytes.essentials</id>
     <title>frozenbytes.essentials</title>
-    <version>1.06</version>
+    <version>1.07</version>
     <authors>Sean Gilbert</authors>
     <owners>Sean Gilbert</owners>
     <summary>frozenbytes.essentials</summary>
@@ -27,7 +27,6 @@
 		<dependency id='folder_size' />
 		<dependency id='logparser.lizardgui' />
 		<dependency id='dotpeek' />
-		<dependency id='xmind' />
 		<dependency id='grepwin' />
 		<dependency id='skype' />
 		<dependency id='testdriven.net' />
@@ -38,6 +37,10 @@
 		<dependency id='gimp' />
     </dependencies>
     <releaseNotes>
+    	October 2, 2014
+    	Removed xmind package due to errors
+
+    	October 22, 2014
     	Updated package icon url
     </releaseNotes>
   </metadata>
