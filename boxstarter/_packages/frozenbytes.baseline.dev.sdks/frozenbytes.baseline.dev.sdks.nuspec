@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <package>
   <metadata>
-    <id>frozenbytes.baseline.dev</id>
-    <title>Frozenbytes Baseline Development</title>
+    <id>frozenbytes.baseline.dev.sdks</id>
+    <title>Frozenbytes Baseline Development SDKS</title>
     <version>1.0.3</version>
     <authors>Sean Gilbert</authors>
     <owners>Sean Gilbert</owners>
     <description>Boxstarter spec to create baseline windows development machine</description>
-    <tags>Boxstarter forzenbytes development vm</tags>
+    <tags>Boxstarter forzenbytes development vm sdks</tags>
     <summary>Boxstarter spec to create baseline windows development machine</summary>
     <projectUrl>https://github.com/segilbert/nuget.packages</projectUrl>
     <copyright>frozenbytes 2014</copyright>
@@ -15,27 +15,10 @@
     <releaseNotes>
     	October 2014 - Initial Release
 
-    	Framework:
-    	.NET 3.5, 4 - 4.5.2
-    	Enable Web Services and ASP.NET Services
-    	Hpyer-V Services
-
-    	Development Tools:
-    	Visual Studio 2013 Ultimate
-    	VS Updates 1-3
-    	cinstm frozenbytes.essentials
-    	cinstm frozenbytes.extras
-    	cinstm frozenbytes.repos
-
     	SDKs:
     	VS 2013
+        Silverlight 3-5 SDK
     	Windows 8 SDK
-
-    	VS IDE Extensions:
-    	PowerShellTools 
-		WebEssentials2013 
-		T4Toolbox 
-		StopOnFirstBuildError
 
     </releaseNotes>
   </metadata>

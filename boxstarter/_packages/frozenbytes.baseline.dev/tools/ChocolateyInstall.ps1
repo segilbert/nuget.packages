@@ -7,11 +7,11 @@ try {
 
     # Basic setup
     Update-ExecutionPolicy Unrestricted
-    Set-ExplorerOptions -showHidenFilesFoldersDrives -showProtectedOSFiles -showFileExtensions
+    Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -EnableShowProtectedOSFiles -EnableShowFileExtensions -EnableShowFullPathInTitleBar
     Enable-RemoteDesktop
     Disable-InternetExplorerESC
     Disable-UAC
-    Set-TaskbarSmall
+    Set-TaskbarOptions -Size Small -UnLock -Dock Top
 
     if (Test-PendingReboot) { Invoke-Reboot }
 
@@ -24,13 +24,15 @@ try {
         if (Test-PendingReboot) { Invoke-Reboot }
 
         cinst DotNet4.5
+        if (Test-PendingReboot) { Invoke-Reboot }
         cinst DotNet4.5.1
+        if (Test-PendingReboot) { Invoke-Reboot }
         cinst DotNet4.5.2
+        if (Test-PendingReboot) { Invoke-Reboot }
 
-        cinst Microsoft-Hyper-V-All -source windowsFeatures
+        cinst Microsoft-Hyper-V-All -source windowsfeatures
 
         cinst IIS-WebServerRole -source windowsfeatures
-        cinst IIS-WebServer -source windowsfeatures
         cinst IIS-WebServerManagementTools -source windowsfeatures
         cinst IIS-ManagementConsole -source windowsfeatures
 
@@ -41,13 +43,13 @@ try {
         cinst IIS-RequestFiltering -source windowsfeatures
         cinst IIS-HttpRedirect -source windowsfeatures
         
-        cinst IIS-ISAPIFilter -source WindowsFeatures
-        cinst IIS-ISAPIExtensions -source WindowsFeatures
-        cinst IIS-NetFxExtensibility -source WindowsFeatures
+        cinst IIS-ISAPIFilter -source windowsfeatures
+        cinst IIS-ISAPIExtensions -source windowsfeatures
+        cinst IIS-NetFxExtensibility -source windowsfeatures
         cinst IIS-ASPNET -source windowsfeatures
         
-        cinst IIS-NetFxExtensibility45 -source WindowsFeatures
-        cinst NetFx4Extended-ASPNET45 -source WindowsFeatures
+        cinst IIS-NetFxExtensibility45 -source windowsfeatures
+        cinst NetFx4Extended-ASPNET45 -source windowsfeatures
         cinst IIS-ASPNET45 -source windowsfeatures
 
         #Enable ASP.NET on win 7/2008R2
@@ -59,34 +61,45 @@ try {
 
     # Install Visual Studio 2013 Express 
     #cinstm VisualStudio2013ExpressWeb 
+    #if (Test-PendingReboot) { Invoke-Reboot }
 
     # Install Visual Studio 2013 Professional 
     #cinstm VisualStudio2013Professional -InstallArguments WebTools
-    if (Test-PendingReboot) { Invoke-Reboot }
+    #if (Test-PendingReboot) { Invoke-Reboot }
 
     # Install Visual Studio 2013 Premium
-    
+    #cinstm
+    #if (Test-PendingReboot) { Invoke-Reboot }
+
     # Install Visual Studio 2013 Ultimate
-    cinstm VisualStudio2013Ultimate -InstallArguments "/Features:'WebTools Win8SDK SQL Blend SilverLight_Developer_Kit WindowsPhone80'"
+    cinst VisualStudio2013Ultimate -InstallArguments "/Features:'WebTools Win8SDK SQL Blend SilverLight_Developer_Kit WindowsPhone80'"
     if (Test-PendingReboot) { Invoke-Reboot }
 
     #Silverlight SDKs
-    cinstm Silverlight3SDK
-    cinstm Silverlight4SDK
-    cinstm Silverlight5SDK
-    cinstm Silverlight5DeveloperRuntime
+    cinst Silverlight3SDK
+    if (Test-PendingReboot) { Invoke-Reboot }
+    cinst Silverlight4SDK
+    if (Test-PendingReboot) { Invoke-Reboot }
+    cinst Silverlight5SDK
+    if (Test-PendingReboot) { Invoke-Reboot }
+    cinst Silverlight5DeveloperRuntime
+    if (Test-PendingReboot) { Invoke-Reboot }
 
     # Visual Studio SDK required for PoshTools extension
-    cinstm VS2013SDK
+    cinst VS2013SDK
     if (Test-PendingReboot) { Invoke-Reboot }
 
     # Visual Studio Updates
-    cinstm VS2013.1
-    cinstm VS2013.2
-    cinstm VS2013.3
+    cinst VS2013.1
+    if (Test-PendingReboot) { Invoke-Reboot }
+    cinst VS2013.2
+    if (Test-PendingReboot) { Invoke-Reboot }
+    cinst VS2013.3
+    if (Test-PendingReboot) { Invoke-Reboot }
 
     # Windows SDK 7 or 8
-    cinstm windows-8-1-sdk
+    cinst windows-8-1-sdk
+    if (Test-PendingReboot) { Invoke-Reboot }
 
     # Install Frozenbytes extensions for VS 2013
     #cinstm frozenbytes.vs2012.extensions
@@ -101,21 +114,21 @@ try {
     # Install-ChocolateyVsixPackage AwsToolkit http://visualstudiogallery.msdn.microsoft.com/175787af-a563-4306-957b-686b4ee9b497
 
     # Install Frozenbytes essentials chocolatey packages
-    cinstm frozenbytes.essentials
-    cinstm frozenbytes.extras
-    cinstm frozenbytes.repos
+    cinst frozenbytes.essentials
+    cinst frozenbytes.extras
+    cinst frozenbytes.repos
 
     #Other dev tools
-    cinstm NugetPackageExplorer
-    cinstm windbg
+    cinst NugetPackageExplorer
+    cinst windbg
 
     #Browsers
-    cinstm googlechrome
-    cinstm firefox
+    cinst googlechrome
+    cinst firefox
 
     #Other essential tools
-    cinstm adobereader
-    cinstm javaruntime
+    cinst adobereader
+    cinst javaruntime
 
     Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Google\Chrome\Application\chrome.exe"
     Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Microsoft Visual Studio 12.0\Common7\IDE\devenv.exe"
