@@ -3,7 +3,7 @@
   <metadata>
     <id>frozenbytes.repos</id>
     <title>frozenbytes.repos</title>
-    <version>1.02</version>
+    <version>1.03</version>
     <authors>Sean Gilbert</authors>
     <owners>Sean Gilbert</owners>
     <summary>frozenbytes.repos installs all the source repos use on a daily basis.  Git Bash,  Mercurial, and Tortoise for git, hg and svn.</summary>
@@ -17,13 +17,12 @@
 		<dependency id='git.install' />
 		<dependency id='TortoiseGit' />
 		<dependency id='hg' />
-		<dependency id='posh-hg' />
 		<dependency id='tortoisehg' />
 		<dependency id='tortoisesvn' />
     </dependencies>
     <releaseNotes>
         October 23, 2014
-        Removed gitforwindows
+        Removed gitforwindows and posh-hg
         Added TortoiseGit
 
         October 22, 2014
