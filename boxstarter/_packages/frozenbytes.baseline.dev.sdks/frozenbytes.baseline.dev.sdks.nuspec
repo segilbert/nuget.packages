@@ -3,23 +3,30 @@
   <metadata>
     <id>frozenbytes.baseline.dev.sdks</id>
     <title>Frozenbytes Baseline Development SDKS</title>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <authors>Sean Gilbert</authors>
     <owners>Sean Gilbert</owners>
-    <description>Boxstarter spec to create baseline windows development machine</description>
+    <description>Boxstarter spec to create baseline windows development machine. This is the third script in a larger set of scripts to create a development vm.  Installs VS 2013 SDK, SL 3-5 and Windows 8 SDK.</description>
     <tags>Boxstarter forzenbytes development vm sdks</tags>
     <summary>Boxstarter spec to create baseline windows development machine</summary>
     <projectUrl>https://github.com/segilbert/nuget.packages</projectUrl>
     <copyright>frozenbytes 2014</copyright>
     <iconUrl>https://raw.githubusercontent.com/segilbert/presentations/master/images/create_frozen_liquid_effects.jpg</iconUrl>
     <releaseNotes>
-    	October 2014 - Initial Release
+    	October 23 2014 - Revised Release 
+        This is the third script in a larger set of scripts to create a development vm.
+        
+        1. frozenbytes.baseline.dev.core.1.0.3.nupkg
+        2. frozenbytes.baseline.dev.vs.1.0.3.nupkg
+        3. ** frozenbytes.baseline.dev.sdks.1.0.3.nupkg
+        4. frozenbytes.baseline.dev.tools.1.0.3.nupkg
+
+        October 22 2014 - Initial Release
 
     	SDKs:
     	VS 2013
         Silverlight 3-5 SDK
     	Windows 8 SDK
-
     </releaseNotes>
   </metadata>
 </package>

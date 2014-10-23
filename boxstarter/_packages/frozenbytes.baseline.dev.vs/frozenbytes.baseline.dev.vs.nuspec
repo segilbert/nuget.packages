@@ -3,21 +3,28 @@
   <metadata>
     <id>frozenbytes.baseline.dev.vs</id>
     <title>Frozenbytes Baseline Development Visual Studio</title>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <authors>Sean Gilbert</authors>
     <owners>Sean Gilbert</owners>
-    <description>Boxstarter spec to create baseline windows development machine</description>
+    <description>Boxstarter spec to create baseline windows development machine. This is the second script in a larger set of scripts to create a development vm.  Installs Visual Studio 2013 and VS Updates 1-3</description>
     <tags>Boxstarter forzenbytes development vm vs Visual Studio</tags>
     <summary>Boxstarter spec to create baseline windows development machine</summary>
     <projectUrl>https://github.com/segilbert/nuget.packages</projectUrl>
     <copyright>frozenbytes 2014</copyright>
     <iconUrl>https://raw.githubusercontent.com/segilbert/presentations/master/images/create_frozen_liquid_effects.jpg</iconUrl>
     <releaseNotes>
-    	October 2014 - Initial Release
+    	October 23 2014 - Revised Release 
+        This is the second script in a larger set of scripts to create a development vm.
+        
+        1. frozenbytes.baseline.dev.core.1.0.3.nupkg
+        2. ** frozenbytes.baseline.dev.vs.1.0.3.nupkg
+        3. frozenbytes.baseline.dev.sdks.1.0.3.nupkg
+        4. frozenbytes.baseline.dev.tools.1.0.3.nupkg
+
+        October 22 2014 - Initial Release
 
     	Visual Studio 2013 Ultimate
     	VS Updates 1-3
-
     </releaseNotes>
   </metadata>
 </package>
