@@ -7,7 +7,7 @@
     <authors>Sean Gilbert</authors>
     <owners>Sean Gilbert</owners>
     <description>Boxstarter spec to create baseline windows development machine</description>
-    <tags>Boxstarter forzenbytes development vm</tags>
+    <tags>Boxstarter frozenbytes frozenbytes.baseline.dev development vm</tags>
     <summary>Boxstarter spec to create baseline windows development machine</summary>
     <projectUrl>https://github.com/segilbert/nuget.packages</projectUrl>
     <copyright>frozenbytes 2014</copyright>
