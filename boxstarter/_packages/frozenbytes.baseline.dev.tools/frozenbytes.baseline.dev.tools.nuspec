@@ -3,11 +3,11 @@
   <metadata>
     <id>frozenbytes.baseline.dev.tools</id>
     <title>Frozenbytes Baseline Development Tools</title>
-    <version>1.0.4</version>
+    <version>1.0.5</version>
     <authors>Sean Gilbert</authors>
     <owners>Sean Gilbert</owners>
     <description>Boxstarter spec to create baseline windows development machine. This is the last script in a larger set of scripts to create a development vm.  Installs development tools and VS extensions.</description>
-    <tags>Boxstarter forzenbytes development vm tools</tags>
+    <tags>Boxstarter frozenbytes development vm tools</tags>
     <summary>Boxstarter spec to create baseline windows development machine</summary>
     <projectUrl>https://github.com/segilbert/nuget.packages</projectUrl>
     <copyright>frozenbytes 2014</copyright>

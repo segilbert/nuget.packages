@@ -3,11 +3,11 @@
   <metadata>
     <id>frozenbytes.baseline.dev.sdks</id>
     <title>Frozenbytes Baseline Development SDKS</title>
-    <version>1.0.4</version>
+    <version>1.0.5</version>
     <authors>Sean Gilbert</authors>
     <owners>Sean Gilbert</owners>
     <description>Boxstarter spec to create baseline windows development machine. This is the third script in a larger set of scripts to create a development vm.  Installs VS 2013 SDK, SL 3-5 and Windows 8 SDK.</description>
-    <tags>Boxstarter forzenbytes development vm sdks</tags>
+    <tags>Boxstarter frozenbytes development vm sdks</tags>
     <summary>Boxstarter spec to create baseline windows development machine</summary>
     <projectUrl>https://github.com/segilbert/nuget.packages</projectUrl>
     <copyright>frozenbytes 2014</copyright>
