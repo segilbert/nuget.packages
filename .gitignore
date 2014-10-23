@@ -3,7 +3,8 @@
 [Oo]bj/
 
 #Do NOT IMPORT custom config files
-*boxstarter/config.log
+*.stg-sec.*
+*boxstarter/azure.stg-sec.*.log
 
 # mstest test results
 TestResults
